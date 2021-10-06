@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="tertiary">
+        <ion-title>Reportes</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+            Reportes recientes
+        </ion-list-header>
+
+        <ion-item *ngFor="let item of items">
+            <ion-avatar slot="start">
+                <ion-img>{{item.imagen}}</ion-img>
+            </ion-avatar>
+            <ion-label>
+                <h1>{{item.lugar}}</h1>
+                <h2>{{item.fecha}}</h2>
+                <h3>{{item.hora}}</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quibusdam? Accusamus recusandae cumque iure quos, tenetur consequatur architecto voluptatem nostrum odio qui, beatae molestias fuga optio, eos repellendus fugiat
+                    exercitationem.
+                </p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

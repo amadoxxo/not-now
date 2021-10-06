@@ -1,17 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <!-- <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header> -->
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card>
+        <img src="../../assets/img/bogota.jpg">
+        <ion-card-header>
+            <ion-card-subtitle>Ubicación</ion-card-subtitle>
+            <ion-card-title>Bogotá</ion-card-title>
+        </ion-card-header>
+    </ion-card>
+
+    <ion-item>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-label>
+                        <ion-icon item-start name="calendar-number-sharp"></ion-icon>
+                        Fecha:
+                    </ion-label>
+                    <ion-datetime placeholder="dd/mm/aaaa" displayFormat="YYYY-MMMM-D" doneText="aceptar" cancelText="cancelar"></ion-datetime>
+                </ion-col>
+                <ion-col>
+                    <ion-label>
+                        <ion-icon item-start name="time-outline"></ion-icon>
+                        Hora:
+                    </ion-label>
+                    <ion-datetime placeholder="h:mm a" displayFormat="h:mm a" doneText="aceptar" cancelText="cancelar"></ion-datetime>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-label position="floating">
+                        <ion-icon item-start name="clipboard-sharp"></ion-icon>
+                        Tipo de acoso
+                    </ion-label>
+                    <ion-textarea></ion-textarea>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-button expand="block" color="tertiary"><b>reportar</b></ion-button>
+    </ion-item>
+
 </ion-content>
